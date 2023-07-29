@@ -30,7 +30,7 @@ public class UserService {
 
     public boolean checkPassword(String password){
 
-        String hashedpassword = passwordEncoder.encode(password)
+        String hashedpassword = passwordEncoder.encode(password);
         if(password == hashedpassword){
             return true;
 
